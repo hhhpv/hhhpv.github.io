@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta http-equiv="content-type"
+        content="text/html; charset=UTF-8">
+ 
+    <meta name="viewport" content="width=device-width,
+        minimum-scale=1,initial-scale=1">
+ 
+    <script src=
+        "https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+ 
+    <script src=
+"https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js">
+    </script>
+ 
+    <link rel="stylesheet" href=
+"https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
+ 
+    <style type="text/css">
+        .terminal,
+        span,
+        .cmd,
+        div {
+            --color: rgba(0, 128, 0, 0.99);
+        }
+ 
+        .terminal,
+        span {
+            --size: 1.4;
+        }
+    </style>
+</head>
+ 
+<body>
+    <script>
+        $('body').terminal({
+            info: function () {
+                this.echo('Name: Hithesh P V\nCore Competencies: Backend Development, Cloud Computing & Applied AI\n'
+                +'Website: https://www.hitheshpv.net\n'
+                +'LinkedIn: https://www.linkedin.com/in/hitheshpv/\n'
+                +'GitHub Handle: hhhpv ');
+            },
+            experience: function(){
+              this.echo('Graduate Assiant Web Developer Jan 2020 - Present\n'+
+                        'Software Developer Sept 2018 - Jun 2019\n');
+            },
+            education:function(){
+              this.echo('MS in Computer Science - May 2021\n'+
+                        'B.E in Computer Science & Engineering - June 2018\n');
+            },
+            projects:function(){
+              this.echo('>>>>LIMAC – A Video Chat Application - Designed and developed a desktop-based video chat application with low latency from scratch. Created the UI using ElectronJS \n and deployed microservices written in Go on AWS\n'+
+              'Link: http://bit.ly/limac_hpv\n'
+              +'>>>>AdigeMane - Developed a full-Stack application which serves as a social media for sharing recipes. Used HTML/CSS and Bootstrap for UI/UX'+
+'\nand handled the requests on backend using REST APIs written in Go\nLink: http://bit.ly/ad_mane'
+              +'>>>>Room-Mate Management - Built a full stack mobile application for expense tracking among my roommates. Built backend in NodeJS for CRUD operations \n'+
+'and the mobile application using Flutter\nLink: http://bit.ly/room_ly'+
+'>>>>Word Cloud - Designed and developed a Word Cloud on Movie Plot Data. Built effective visualization by extracting top words, N-Grams and \n movie details from the data with filtering capability.\n'+
+'Link: http://bit.ly/wdcld\n');
+
+            },
+            summarize:function(){
+            this.echo('Name: Hithesh P V\nCore Competencies: Backend Development, Cloud Computing & Applied AI\n'
+                +'Website: https://www.hitheshpv.net\n'
+                +'LinkedIn: https://www.linkedin.com/in/hitheshpv/\n'
+                +'GitHub Handle: hhhpv ');
+
+
+            this.echo('EDUCATION:\n');
+            this.echo('MS in Computer Science - May 2021\n'+
+                        'B.E in Computer Science & Engineering - June 2018\n');
+
+            this.echo('WORK EXPERIENCE');
+            this.echo('Graduate Assiant Web Developer Jan 2020 - Present\n'+
+                        'Software Developer Sept 2018 - Jun 2019\n');
+
+            
+
+            this.echo('PROJECTS');
+            this.echo('>>>>LIMAC – A Video Chat Application - Designed and developed a desktop-based video chat application with low latency from scratch. Created the UI using ElectronJS \n and deployed microservices written in Go on AWS\n'+
+              'Link: http://bit.ly/limac_hpv\n'
+              +'>>>>AdigeMane - Developed a full-Stack application which serves as a social media for sharing recipes. Used HTML/CSS and Bootstrap for UI/UX'+
+'\nand handled the requests on backend using REST APIs written in Go\nLink: http://bit.ly/ad_mane'
+              +'>>>>Room-Mate Management - Built a full stack mobile application for expense tracking among my roommates. Built backend in NodeJS for CRUD operations \n'+
+'and the mobile application using Flutter\nLink: http://bit.ly/room_ly'+
+'>>>>Word Cloud - Designed and developed a Word Cloud on Movie Plot Data. Built effective visualization by extracting top words, N-Grams and \n movie details from the data with filtering capability.\n'+
+'Link: http://bit.ly/wdcld\n');
+            }
+            ,help: function () {
+                this.echo('info - view my basic info & contact \n'
+                + 'experience - view my work experience\n'
+                + 'education - view my educational background\n'
+                + 'projects - get info about my projects\n'
+                + 'summarize - summarize portfolio');
+            },
+        }, {
+            greetings: 'Hello, My Name is Hithesh. Welcome to my interactive portfolio site\n'+'Type help to view commands - Type clear to clear screen at any point:\n'
+        });
+    </script>
+</body>
+ 
+</html>
